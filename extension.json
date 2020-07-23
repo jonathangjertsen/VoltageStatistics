@@ -1,0 +1,40 @@
+{
+  "name": "Voltage Statistics",
+  "apiVersion": "1.0.0",
+  "author": "Jonathan Reichelt Gjertsen",
+  "version": "1.0.0",
+  "description": "Provides mean, standard deviation, median, 5% quantile and 95% quantile.",
+  "extensions": {
+    "Voltage Statistics": {
+      "type": "AnalogMeasurement",
+      "entryPoint": "VoltageStatistics.VoltageStatistics",
+      "metrics": {
+        "v_avg": {
+          "name": "Voltage",
+          "notation": "V<sub>avg</sub>",
+          "units": "V"
+        },
+        "v_std": {
+          "name": "Standard deviation",
+          "notation": "V<sub>std</sub>",
+          "units": "V"
+        },
+        "v_med": {
+          "name": "Median deviation",
+          "notation": "V<sub>med</sub>",
+          "units": "V"
+        },
+        "v_q05": {
+          "name": "5% quantile",
+          "notation": "Q<sub>5%</sub>",
+          "units": "V"
+        },
+        "v_q95": {
+          "name": "95% quantile",
+          "notation": "Q<sub>95%</sub>",
+          "units": "V"
+        }
+      }
+    }
+  }
+}
